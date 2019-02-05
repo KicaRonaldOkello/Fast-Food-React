@@ -1,14 +1,15 @@
-import path from "path";
-
-import HtmlWebpackPlugin from "html-webpack-plugin";
+const path = require("path");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
   output: {
     path: path.join(__dirname, "build"),
+    publicPath: "/",
     filename: "index.bundle.js"
   },
-  mode: process.env.NODE_ENV || "development",
+  mode: "development",
   resolve: {
     modules: [path.resolve(__dirname, "src"), "node_modules"]
   },
@@ -34,11 +35,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: ["babel-loader", "eslint-loader"]
-      },
-      {
         test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
         loaders: ["file-loader"]
       }
@@ -46,7 +42,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html")
+      template: path.join(__dirname, "src", "index.html"),
+      filename: "./index.html"
     })
   ]
 };
