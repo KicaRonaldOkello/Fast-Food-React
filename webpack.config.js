@@ -1,6 +1,7 @@
 import path from "path";
 
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import Dotenv from "dotenv-webpack";
 
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
@@ -45,6 +46,14 @@ module.exports = {
     ]
   },
   plugins: [
+    new Dotenv({
+      path: "./.env",
+      safe: false,
+      systemvars: false,
+      silent: false,
+      expand: false,
+      defaults: false
+    }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "src", "index.html")
     })
