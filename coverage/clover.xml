@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1549531834626" clover="3.2.0">
+  <project timestamp="1549531834626" name="All files">
+    <metrics statements="36" coveredstatements="33" conditionals="5" coveredconditionals="5" methods="15" coveredmethods="12" elements="56" coveredelements="50" complexity="0" loc="36" ncloc="36" packages="4" files="6" classes="6"/>
+    <package name="actions">
+      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+      <file name="SignUpAction.js" path="/Users/kicaronaldokello/Desktop/practice react/src/actions/SignUpAction.js">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+      <file name="actionTypes.js" path="/Users/kicaronaldokello/Desktop/practice react/src/actions/actionTypes.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="SignUpForm.jsx" path="/Users/kicaronaldokello/Desktop/practice react/src/components/SignUpForm.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="103" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="reducers">
+      <metrics statements="5" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="SignUpReducer.jsx" path="/Users/kicaronaldokello/Desktop/practice react/src/reducers/SignUpReducer.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/kicaronaldokello/Desktop/practice react/src/reducers/index.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="views.SignUp">
+      <metrics statements="22" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="6"/>
+      <file name="SignUp.jsx" path="/Users/kicaronaldokello/Desktop/practice react/src/views/SignUp/SignUp.jsx">
+        <metrics statements="22" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="6"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="68" count="12" type="stmt"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="122" count="1" type="stmt"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

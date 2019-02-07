@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "font-awesome/css/font-awesome.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+import Routes from "./Router.jsx";
 
-let HelloWorld = () => {
-  return <h1>Hello World!</h1>;
-};
-
-ReactDOM.render(<HelloWorld />, document.getElementById("root"));
+ReactDOM.render(<Routes />, document.getElementById("root"));

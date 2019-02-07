@@ -1,0 +1,19 @@
+{
+  "name": "fast-food-fast",
+  "scripts": {},
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/mars/create-react-app-buildpack"
+    }
+  ],
+  "stack": "heroku-18"
+}
