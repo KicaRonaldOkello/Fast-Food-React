@@ -1,5 +1,4 @@
 const path = require("path");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -24,7 +23,13 @@ module.exports = {
         test: /\.(js|jsx)$/,
         // we do not want anything from node_modules to be compiled
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+            plugins: ["@babel/plugin-proposal-class-properties"]
+          }
+        }
       },
       {
         test: /\.(css|scss)$/,
@@ -35,14 +40,14 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
+        test: /\.(jpg|jpeg|png|gif|mp3|svg|ttf|woff|eot|woff2)$/,
         loaders: ["file-loader"]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html"),
+      template: path.resolve(__dirname, "src", "index.html"),
       filename: "./index.html"
     })
   ]
