@@ -79,18 +79,11 @@ const SignUpForm = ({ onChange, onSubmit, errors }) => {
                     onChange={onChange}
                   />
 
-                  <div className="text-center">
-                    <MDBBtn type="submit" className="btn-block" color="red">
-                      Login
-                    </MDBBtn>
-                    <p className="font-small blue-text d-flex justify-content-end pb-3">
-                      <a href="/passwordreset" className="red-text ml-1">
-                        Forgot Password?
-                      </a>
-                    </p>
+                  <MDBBtn type="submit" className="btn-block" color="red">
+                    SignUp
+                  </MDBBtn>
 
-                    <div className="row my-3 d-flex justify-content-center" />
-                  </div>
+                  <div className="row my-3 d-flex justify-content-center" />
                 </MDBCardBody>
               </MDBCard>
             </form>

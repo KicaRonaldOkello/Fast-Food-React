@@ -5,13 +5,15 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import store from "./store";
 import SignUp from "./views/SignUp/SignUp.jsx";
+import Login from "./views/LoginVIew/Login.jsx";
 
 const Routes = () => (
   <Router>
     <Provider store={store}>
       <ToastContainer />
       <Switch>
-        <Route path="/" component={SignUp} />
+        <Route path="/" component={SignUp} exact />
+        <Route path="/login" component={Login} exact />
       </Switch>
     </Provider>
   </Router>
