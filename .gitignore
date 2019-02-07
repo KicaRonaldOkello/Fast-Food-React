@@ -4,4 +4,4 @@
 
 .env
 
-/coverage
+coverage/

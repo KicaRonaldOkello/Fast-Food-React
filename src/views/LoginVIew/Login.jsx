@@ -71,7 +71,7 @@ export class Login extends Component {
             <MDBNavbarNav left />
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink to="/login">Login</MDBNavLink>
+                <MDBNavLink to="/">Home</MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>
